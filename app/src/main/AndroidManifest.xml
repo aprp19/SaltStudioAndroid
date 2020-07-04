@@ -12,8 +12,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="SaltStudio"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:label="SaltStudio"/>
         <activity
             android:name=".SplashActivity"
             android:theme="@style/Splashscreen">
@@ -24,8 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Walktrough.WalktroughActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:name=".Walktrough.WalktroughActivity"/>
 
     </application>
 
