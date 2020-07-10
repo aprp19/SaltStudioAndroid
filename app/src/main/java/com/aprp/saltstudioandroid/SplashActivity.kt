@@ -12,7 +12,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Handler().postDelayed({
-            startActivity(Intent(this,WalktroughActivity::class.java))
+            startActivity(Intent(this,MainActivity::class.java))
             finish()
         }, SPLASH_TIME_OUT)
     }

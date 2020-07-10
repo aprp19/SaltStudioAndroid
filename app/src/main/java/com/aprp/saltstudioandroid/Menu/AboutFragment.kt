@@ -1,5 +1,6 @@
 package com.aprp.saltstudioandroid.Menu
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -7,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.aprp.saltstudioandroid.Admin.LoginActivity
+import com.aprp.saltstudioandroid.MainActivity
 import com.aprp.saltstudioandroid.R
 import mehdi.sakout.aboutpage.AboutPage
 import mehdi.sakout.aboutpage.Element
@@ -44,7 +47,7 @@ class AboutFragment : Fragment() {
         CopyrightsElement.setIconNightTint(android.R.color.white)
         CopyrightsElement.setGravity(Gravity.CENTER)
         CopyrightsElement.setOnClickListener(View.OnClickListener {
-            Toast.makeText(context,copyrights,Toast.LENGTH_SHORT).show()
+            startActivity(Intent(context, LoginActivity::class.java))
         })
         return CopyrightsElement
     }

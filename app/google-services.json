@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "510608769448",
+    "firebase_url": "https://saltstudioandroid.firebaseio.com",
+    "project_id": "saltstudioandroid",
+    "storage_bucket": "saltstudioandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510608769448:android:b6de3f76ae1f72b2c29d9d",
+        "android_client_info": {
+          "package_name": "com.aprp.saltstudioandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510608769448-bju67i0lh93gg2gcmp1te72ckljpa56d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aprp.saltstudioandroid",
+            "certificate_hash": "ab0d3ce79cf585652bd60b0933851a00b8adb53a"
+          }
+        },
+        {
+          "client_id": "510608769448-uoinvr3f2dui7nm2j17id2mbeqvt6nsd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsdjYgJysaX_IRqxeVFHHMWNFoSp8-rJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510608769448-uoinvr3f2dui7nm2j17id2mbeqvt6nsd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
