@@ -37,5 +37,5 @@ dependencies {
     //Addon
     implementation 'com.afollestad:viewpagerdots:1.0.0'
     implementation 'com.etebarian:meow-bottom-navigation:1.2.0'
-
+    implementation 'com.github.medyo:android-about-page:1.3'
 }
