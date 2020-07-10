@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.widget.Toast
 import com.aprp.saltstudioandroid.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
@@ -60,7 +61,6 @@ class AddActivity : AppCompatActivity() {
                 Log.d("UploadImage","Upload Success: ${it.metadata?.path}")
                 ref.downloadUrl.addOnSuccessListener {
                     Log.d("UploadImage","File Location: $it")
-
                     saveToDatabase(it.toString())
                 }
             }
@@ -76,7 +76,11 @@ class AddActivity : AppCompatActivity() {
         val gameData = GameData(game_name, game_platform, game_price, game_image)
         ref.setValue(gameData)
             .addOnSuccessListener {
-                Log.d("AddedGame","Added Success")
+                Toast.makeText(this,"Game successfuly added to library!",Toast.LENGTH_LONG).show()
+                finish();
+                overridePendingTransition(0, 0);
+                startActivity(getIntent());
+                overridePendingTransition(0, 0);
             }
     }
 }
