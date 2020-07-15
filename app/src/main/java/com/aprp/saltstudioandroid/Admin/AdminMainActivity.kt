@@ -11,6 +11,6 @@ class AdminMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_main)
 
-        admin_addbutton.setOnClickListener { startActivity(Intent(this,AddActivity::class.java)) }
+        admin_addbtn.setOnClickListener { startActivity(Intent(this,AddActivity::class.java)) }
     }
 }

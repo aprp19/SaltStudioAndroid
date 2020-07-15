@@ -29,4 +29,10 @@
     <string name="add_game_name">Game name</string>
     <string name="admin_addbutton">Add Game</string>
 
+    //Game XML
+    <string name="list_nama_game">Show Name Game</string>
+    <string name="list_platform_game">Show Platform</string>
+    <string name="list_harga_game">Show Price</string>
+    <string name="list_buybtn">Buy</string>
+
 </resources>

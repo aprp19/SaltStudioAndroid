@@ -26,6 +26,10 @@ class AddActivity : AppCompatActivity() {
             confirmAdd()
         }
 
+        add_bckbtn.setOnClickListener{
+            startActivity(Intent(this,AdminMainActivity::class.java))
+        }
+
         admin_add_image.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
@@ -71,7 +75,7 @@ class AddActivity : AppCompatActivity() {
         val game_platform = input_game_platform.text.toString()
         val game_price = input_game_price.text.toString()
 
-        val ref = FirebaseDatabase.getInstance().getReference("/Game/$game_name")
+        val ref = FirebaseDatabase.getInstance().getReference("Game/$game_name")
 
         val gameData = GameData(game_name, game_platform, game_price, game_image)
         ref.setValue(gameData)
@@ -84,6 +88,3 @@ class AddActivity : AppCompatActivity() {
             }
     }
 }
-
-class GameData(val game_name: String, val game_platform: String,
-           val game_price: String, val game_image: String)

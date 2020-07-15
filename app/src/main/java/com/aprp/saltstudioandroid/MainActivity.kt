@@ -6,7 +6,7 @@ import android.preference.PreferenceManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.aprp.saltstudioandroid.Menu.AboutFragment
-import com.aprp.saltstudioandroid.Menu.CartFragment
+import com.aprp.saltstudioandroid.Menu.ShopFragment
 import com.aprp.saltstudioandroid.Menu.HomeFragment
 import com.aprp.saltstudioandroid.Walktrough.WalktroughActivity
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         m_btm_nav.setOnClickMenuListener {
             when(it.id){
                 1 -> setFragment(HomeFragment.newInstance())
-                2 -> setFragment(CartFragment.newInstance())
+                2 -> setFragment(ShopFragment.newInstance())
                 3 -> setFragment(AboutFragment.newInstance())
                 else -> ""
             }
