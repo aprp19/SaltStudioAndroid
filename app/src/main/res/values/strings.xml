@@ -3,7 +3,6 @@
 
     //Walktrough Activity
     <string name="cd_image">Img</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="about_desc">Studio game yang berawal dari hobi</string>
     <string name="about_copyrights">Angga Puja Restu Prakasa © %1$d</string>
@@ -18,8 +17,9 @@
     <string name="admin_hint_password">Password</string>
 
     //Admin Menu
+    <string name="admin_addssbutton">Add Salt Studio Game</string>
     <string name="admin_title">Admin Menu</string>
-
+    <string name="admin_addbutton">Add Shop Game</string>
 
     //Add Activity
     <string name="add_addbtn">Add</string>
@@ -27,12 +27,18 @@
     <string name="add_game_platform">Platform</string>
     <string name="add_game_price">Rp. </string>
     <string name="add_game_name">Game name</string>
-    <string name="admin_addbutton">Add Game</string>
 
     //Game XML
     <string name="list_nama_game">Show Name Game</string>
     <string name="list_platform_game">Show Platform</string>
     <string name="list_harga_game">Show Price</string>
     <string name="list_buybtn">Buy</string>
+
+    //Home Activity
+    <string name="home_tv_desc">
+        We are group of College Student Who Passionate About Making Games
+    </string>
+    <string name="home_tv_title">Welcome To Salt Studio</string>
+    <string name="home_tv_list">Our Games :</string>
 
 </resources>

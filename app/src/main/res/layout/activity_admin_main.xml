@@ -59,12 +59,50 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/login_tv1"
+                        android:id="@+id/admin_tv_addbtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dimen16"
                         android:layout_marginBottom="@dimen/dimen8"
                         android:text="@string/admin_addbutton"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="@dimen/font24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/admin_addssbtn"
+                android:layout_width="@dimen/dimen300"
+                android:layout_height="@dimen/dimen50"
+                android:layout_marginTop="25dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/SaltStudioColor"
+                app:cardCornerRadius="@dimen/dimen15"
+                app:cardElevation="@dimen/dimen20"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/admin_addbtn"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/admin_tv_addssbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen16"
+                        android:layout_marginBottom="@dimen/dimen8"
+                        android:text="@string/admin_addssbutton"
                         android:textColor="@android:color/background_light"
                         android:textSize="@dimen/font24"
                         app:layout_constraintBottom_toBottomOf="parent"
