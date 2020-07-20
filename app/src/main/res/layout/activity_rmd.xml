@@ -56,6 +56,30 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:id="@+id/rmd_jdlplatform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rmd_jdlplatform"
+        android:gravity="center"
+        android:textSize="@dimen/font18"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen5"
+        app:layout_constraintTop_toBottomOf="@id/rmd_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:id="@+id/rmd_platform_android"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:src="@drawable/ic_android"
+        android:layout_marginTop="@dimen/dimen5"
+        app:layout_constraintTop_toBottomOf="@id/rmd_jdlplatform"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
         android:id="@+id/rmd_jdltrailer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,7 +88,7 @@
         android:textSize="@dimen/font18"
         android:textStyle="bold"
         android:layout_marginTop="@dimen/dimen5"
-        app:layout_constraintTop_toBottomOf="@id/rmd_desc"
+        app:layout_constraintTop_toBottomOf="@id/rmd_platform_android"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
