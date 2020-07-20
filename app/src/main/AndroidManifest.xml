@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.aprp.saltstudioandroid">
+
+    <!--Permission-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -8,8 +14,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Admin.AddActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="q">
+        <activity android:name=".MainGame.RmdActivity"/>
+        <activity android:name=".Admin.AddActivity" />
         <activity android:name=".Admin.AdminMainActivity" />
         <activity android:name=".Admin.LoginActivity" />
         <activity
@@ -26,5 +35,4 @@
         </activity>
         <activity android:name=".Walktrough.WalktroughActivity" />
     </application>
-
 </manifest>

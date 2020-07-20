@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGame.RmdActivity">
+
+    <ImageButton
+        android:id="@+id/rmd_bckbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:contentDescription="@string/cd_image" />
+
+
+    <ImageView
+        android:id="@+id/rmd_logo"
+        android:layout_width="@dimen/dimen142"
+        android:layout_height="@dimen/dimen142"
+        android:layout_marginTop="@dimen/dimen25"
+        app:layout_constraintTop_toBottomOf="@id/rmd_bckbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/rmd_logo"
+        android:contentDescription="@string/cd_image" />
+
+
+    <TextView
+        android:id="@+id/rmd_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rmd_nama"
+        android:gravity="center"
+        android:textSize="@dimen/font18"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/rmd_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/rmd_desc"
+        android:text="@string/rmd_desc"
+        android:layout_marginTop="@dimen/dimen5"
+        android:layout_marginStart="@dimen/dimen25"
+        android:layout_marginEnd="@dimen/dimen25"
+        app:layout_constraintTop_toBottomOf="@id/rmd_nama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/rmd_jdltrailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rmd_jdltrailer"
+        android:gravity="center"
+        android:textSize="@dimen/font18"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen5"
+        app:layout_constraintTop_toBottomOf="@id/rmd_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/rmd_trailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen5"
+        app:layout_constraintTop_toBottomOf="@id/rmd_jdltrailer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:videoId="zveivSaRpqM"
+        app:showFullScreenButton="true"
+        />
+
+    <TextView
+        android:id="@+id/rmd_jdldownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rmd_jdldownload"
+        android:gravity="center"
+        android:textSize="@dimen/font18"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen5"
+        app:layout_constraintTop_toBottomOf="@id/rmd_trailer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/rmd_psdl"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_marginTop="@dimen/dimen10"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_playstore"
+        app:layout_constraintEnd_toStartOf="@id/rmd_mldl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rmd_jdldownload"
+        android:contentDescription="@string/cd_image" />
+
+    <ImageView
+        android:id="@+id/rmd_mldl"
+        android:layout_width="@dimen/dimen50"
+        android:layout_height="@dimen/dimen50"
+        android:layout_marginTop="@dimen/dimen10"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_manualdownload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rmd_psdl"
+        app:layout_constraintTop_toBottomOf="@id/rmd_jdldownload"
+        android:contentDescription="@string/cd_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

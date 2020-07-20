@@ -40,5 +40,14 @@
     </string>
     <string name="home_tv_title">Welcome To Salt Studio</string>
     <string name="home_tv_list">Our Games :</string>
+    <string name="home_nama_rmd">Rumah Makan Delivery</string>
+    <string name="home_platform_game">Android</string>
+    <string name="home_checkbtn">Check</string>
+    <string name="untitled">" "</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="rmd_nama">Rumah Makan Delivery</string>
+    <string name="rmd_desc">Game casual yang mengajarkan anak-anak tentang makanan tradisional di beberapa daerah di Indonesia</string>
+    <string name="rmd_jdltrailer">Trailer</string>
+    <string name="rmd_jdldownload">Download</string>
 
 </resources>
