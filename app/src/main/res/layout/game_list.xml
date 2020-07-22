@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -43,12 +42,11 @@
                 android:layout_marginTop="@dimen/dimen30"
                 android:text="@string/list_nama_game"
                 android:textSize="@dimen/font24"
-                android:maxLines="1"
-                android:ellipsize="end"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.05"
+                android:ellipsize="marquee"
+                android:layout_marginStart="@dimen/dimen5"
                 app:layout_constraintStart_toEndOf="@id/list_img_game"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:singleLine="true" />
 
             <TextView
                 android:id="@+id/list_platform_game"
@@ -57,8 +55,7 @@
                 android:text="@string/list_platform_game"
                 android:layout_marginTop="@dimen/dimen4"
                 android:textSize="@dimen/font16"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.05"
+                android:layout_marginStart="@dimen/dimen5"
                 app:layout_constraintStart_toEndOf="@id/list_img_game"
                 app:layout_constraintTop_toBottomOf="@id/list_nama_game" />
 
@@ -68,9 +65,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/list_harga_game"
                 android:layout_marginTop="@dimen/dimen4"
+                android:layout_marginStart="@dimen/dimen5"
                 android:textSize="@dimen/font16"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.05"
                 app:layout_constraintStart_toEndOf="@id/list_img_game"
                 app:layout_constraintTop_toBottomOf="@id/list_platform_game" />
 

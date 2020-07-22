@@ -8,20 +8,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <TextView
             android:id="@+id/home_tv_title"
-            android:text="@string/home_tv_title"
             android:layout_width="wrap_content"
-            android:textColor="@color/SaltStudioColor"
-            android:textStyle="bold"
             android:layout_height="@dimen/dimen50"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="@dimen/dimen20"
-            android:layout_marginStart="@dimen/dimen10"
             android:layout_marginEnd="@dimen/dimen10"
-            android:textSize="@dimen/font24"
+            android:text="@string/home_tv_title"
+            android:textColor="@color/SaltStudioColor"
+            android:textSize="@dimen/font32"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <TextView
             android:id="@+id/home_tv_desc"
             android:text="@string/home_tv_desc"

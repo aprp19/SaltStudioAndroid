@@ -34,7 +34,12 @@ class RmdActivity : AppCompatActivity() {
         storage = Firebase.storage
 
         rmd_bckbtn.setOnClickListener {
+            finish()
             startActivity(Intent(this,MainActivity::class.java))
+        }
+
+        rmd_platform_android.setOnClickListener {
+            Toast.makeText(this,"Android",Toast.LENGTH_SHORT).show()
         }
 
         val youTubePlayerView: YouTubePlayerView = findViewById(R.id.rmd_trailer)
@@ -76,7 +81,7 @@ class RmdActivity : AppCompatActivity() {
     private fun downloadFile() {
         val storage = FirebaseStorage.getInstance()
         val storageRef =
-            storage.getReferenceFromUrl("https://firebasestorage.googleapis.com/v0/b/saltstudioandroid.appspot.com/o/game_utama%2FRMDv0.1.apk?alt=media&token=4e54e46b-c806-41d1-b483-e30bc8c789ab")
+            storage.getReferenceFromUrl("https://firebasestorage.googleapis.com/v0/b/saltstudioandroid.appspot.com/o/game_utama%2FRMDv0.1.apk?alt=media&token=dc67608c-359f-4965-9b6a-ad0bcce3ffba")
         val pd = ProgressDialog(this)
         pd.setTitle("RMDv0.1.apk")
         pd.setMessage("Downloading Please Wait!")
@@ -108,6 +113,7 @@ class RmdActivity : AppCompatActivity() {
                 ";local tem file not created $exception"
             )
             Toast.makeText(applicationContext, "Download Incompleted", Toast.LENGTH_LONG).show()
+            pd.hide()
         }
     }
 }

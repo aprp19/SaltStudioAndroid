@@ -7,18 +7,31 @@
     tools:context=".Menu.ShopFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/shop_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen50"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/dimen10"
+            android:text="@string/shop_tv_title"
+            android:textColor="@color/SaltStudioColor"
+            android:textSize="@dimen/font32"
+            android:textStyle="bold"/>
 
         <ListView
             android:id="@+id/shop_listView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toTopOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="@dimen/dimen8"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen8"
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@id/shop_tv_title" />
+
+    </LinearLayout>
 
 </FrameLayout>

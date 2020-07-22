@@ -77,7 +77,8 @@
         android:layout_marginTop="@dimen/dimen5"
         app:layout_constraintTop_toBottomOf="@id/rmd_jdlplatform"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/cd_image"/>
 
     <TextView
         android:id="@+id/rmd_jdltrailer"
@@ -96,13 +97,15 @@
         android:id="@+id/rmd_trailer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen10"
+        android:layout_marginEnd="@dimen/dimen10"
         android:layout_marginTop="@dimen/dimen5"
         app:layout_constraintTop_toBottomOf="@id/rmd_jdltrailer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
         app:videoId="zveivSaRpqM"
-        app:showFullScreenButton="true"
+        app:showFullScreenButton="false"
         />
 
     <TextView

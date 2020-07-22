@@ -1,5 +1,6 @@
 package com.aprp.saltstudioandroid.Menu
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -20,6 +21,7 @@ import com.squareup.picasso.Picasso
 class ShopAdapter (val mCtx: Context, val layoutResId: Int, val gamelist: List<GameData>)
     : ArrayAdapter<GameData>(mCtx,layoutResId,gamelist) {
 
+    @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val layoutInflater: LayoutInflater = LayoutInflater.from(mCtx)
         val view: View = layoutInflater.inflate(layoutResId,null)
@@ -38,7 +40,7 @@ class ShopAdapter (val mCtx: Context, val layoutResId: Int, val gamelist: List<G
         Picasso.get().load(game.game_image).into(list_imggame)
         list_buygame.setOnClickListener {
             val number = "+6285156380969"
-            val text = "Permisi, Mau Beli " + game.game_name + "dengan harga : " + game.game_price
+            val text = "Permisi, Mau Beli " + game.game_name + " dengan harga : " + game.game_price
             val url = "https://api.whatsapp.com/send?phone=$number&text=$text"
             val i = Intent(Intent.ACTION_VIEW)
             i.data = Uri.parse(url)

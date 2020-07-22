@@ -6,7 +6,7 @@
     <!--Permission-->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
 
     <application
         android:allowBackup="true"
@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:requestLegacyExternalStorage="true"
-        tools:targetApi="q">
+        tools:targetApi="q"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity android:name=".MainGame.RmdActivity"/>
         <activity android:name=".Admin.AddActivity" />
         <activity android:name=".Admin.AdminMainActivity" />
